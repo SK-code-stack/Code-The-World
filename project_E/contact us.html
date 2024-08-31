@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code > Contact Us</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+
+    <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Google Font CDN Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+
+
+    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="header footer.css">
+    
+    <script src="js/home.js"></script>
+
+
+
+</head>
+<body>
+<!-- Header  start -->
+
+    <header class="hader">
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="#">
+                <img src="pictures/mylogo.PNG" alt="Code World">
+            </a>
+        </div>
+        
+        <div class="tab" id="navbarr">
+            <a  class="tabs " id="t1" href="index.html">HOME</a>
+            <a  class="tabs" href="program.php">PROGRAM</a>
+            <a  class="tabs" href="job.php">JOB</a>
+            <a  class="tabs" id="active" href="contact us.html">CONTACT US</a>
+            <a class="tabs"  href="about.html">ABOUT</a>
+
+            <!-- <div id="drop-search" class="search-container">
+                <input type="text" name="search" placeholder="Search..." class="search-input">
+                <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>      
+                </a>
+            </div> -->
+
+
+            
+            <!-- <button class="btn">Login</button> -->
+            
+<!--             
+        </div>
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>      
+            </a>
+        </div> -->
+      </div>
+        <button id="glo-btn" class='glowing-btn' onclick="login()"><span class='glowing-txt'>L<span class='faulty-letter'>O</span>GIN</span></button>
+            <!-- <button class="btn">Login</button>  end ////////////-->
+            <!-- menu bar -->
+            <i id="menu-btn" class="fa fa-bars" onclick="toggleIcons(), toggleNavbar()" ></i>
+            <i id="cross" class="fa fa-times" aria-hidden="true" onclick="toggleIcons(), toggleNavbar()"></i>
+            <!-- menu bar End ///////// -->
+
+
+
+    </nav>
+
+    </header>
+<!-- Header  end //////////////////// -->
+
+        
+<!-- nav bar end/////////////////////////////////////////////////////////// -->
+
+
+<div class="blank"></div>
+
+
+<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.</p>
+        <form action="contactus.php" method="post">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required name="contactName" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required name="contactEmail">
+          </div>
+          <div class="input-box message-box">
+            <textarea placeholder="Your message" required name="contactMsg"></textarea>
+          </div>
+          <div>
+            <button id="send-btn" type="submit">Send Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+
+
+<!-- Footer Session  -->
+
+<footer>
+
+  <div class="end">
+     <div class="logo">
+          <a href="#"><img id="pic2" src="pictures/mylogo.PNG" alt=""></a>
+       
+     </div>
+     <div class="line"></div>
+
+  
+     <div class="link">
+                  <h1>Quick Links</h1>
+                  <a href="index.html">HOME</a>
+                  <a href="program.php">PROGRAM</a>
+                  <a href="job.php">JOB</a>
+                  <a href="#" id="active">CONTACT US</a>
+                  <a href="about.html">ABOUT</a>
+  
+     </div>
+     <div class="line"></div>
+
+     <div class="social">
+      <h1>Contact Us</h1>
+      <p><i class="fa fa-facebook-square"></i>    Code the World</p>
+      <p><i class="fa fa-envelope"></i>   codetheworld@gmail.com</p>
+      <p><i class="fa fa-globe" aria-hidden="true"></i>   www.codetheworld.edu.pk</p>
+      <p> <i class="fa fa-map-marker"></i>    23-E-III, Gulberg-III, 54660 Lahore, Pakistan</p>
+      
+      
+     </div>
+  
+  
+  
+  </footer>
+
+
+
+</body>
+</html>

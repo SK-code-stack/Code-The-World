@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C W > login</title>
+	<link rel="stylesheet" type="text/css" href="login signup css.css">
+	<script src="js/home.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	
+<div class="top">
+	<i id="cross" class="fa fa-close" onclick="home()"></i>
+</div>
+
+
+
+<div class="form" id="form">
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="student.php" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="username" placeholder="User name" required="">
+					<!-- <input type="email" name="email" placeholder="Email" required=""> -->
+					<input type="password" name="password" placeholder="Password" required="">
+					<div class="lr-btn">
+					<button>Login</button>
+					<!-- <button type="reset">Reset</button> -->
+				    </div>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="admin.php" method="post">
+					<label for="chk" aria-hidden="true">Admin</label>
+					<input type="text"  name="username" placeholder="Username" required="" id="username">
+					<input type="password" name="password" placeholder="Password" required="">
+					<div class="lr-btn">
+						<button>Login</button>
+						<!-- <button type="reset">Reset</button> -->
+					</div>		
+				</form>
+			</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

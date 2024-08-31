@@ -1,0 +1,195 @@
+
+:root {
+    --green: rgb(3, 251, 20);
+    --green2: rgba(3, 251, 20, 0.692);
+    --black: rgb(52, 51, 51);
+    --hover: rgba(255, 255, 255, 0.243);
+    --blue: rgb(96, 181, 251);
+  }
+  
+  
+  
+  
+  * {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+  
+  }
+  
+  *::selection {
+    background-color: var(--green);
+    color: var(--black);
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+  }
+  
+  ::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5rem;
+  
+  }
+
+/* body starts//////////////////////////////////////// */
+.blank{
+    width: 100%;
+    height: 6rem;
+    /* background-color: red; */
+}
+
+.program-text {
+  
+  background-image: url("pictures/backgreen.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: inset 2px 2px 6px black , 2px 2px 6px black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    /* background-color: red; */
+  }
+
+
+  /* cards////////////////////////////////// */
+
+  .program {
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    /* display: grid; */
+  
+  }
+
+  .container{
+    background-color: var(--black);
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container .courses {
+    height: auto;
+    min-width: 20rem;
+    background-color: var(--black);
+    padding: .5rem;
+    box-shadow: inset 1px 1px 5px white, 1px 1px 2px rgb(65, 65, 65);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+
+  }
+  
+  .container>.courses:hover {
+    box-shadow: inset 1px 1px 5px rgb(0, 255, 64), 1px 1px 2px rgb(0, 81, 255);
+    transform: scale(1.06);
+
+  
+  }
+  
+  #c1 {
+    height: 15rem;
+    width: 19rem;
+    border-radius: 10px;
+    align-items: center;
+    /* margin: 0.3rem; */
+  }
+  
+  .container>.courses>h1 {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .container>.courses>p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .container>.courses>.enroll-btn {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 10rem;
+    height: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: var(--green);
+    box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(65, 65, 65);
+  }
+  
+  .container>.courses>.enroll-btn:hover {
+    box-shadow: 1px 1px 5px white, 1px 1px 2px rgb(65, 65, 65);
+    font-size: 1.6rem;
+  }
+  
+  .container>.courses>.enroll-btn:active {
+    box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(0, 0, 0);
+    font-size: 1.5rem;
+  }
+
+
+
+  #active{
+    color: var(--green);
+    font-size: 1.8rem;
+    text-decoration: underline;
+  }
+
+
+
+
+
+  #show-course{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+
+
+  }
+
+

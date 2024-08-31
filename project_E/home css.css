@@ -1,0 +1,507 @@
+:root {
+  --green: rgb(3, 251, 20);
+  --green2: rgba(3, 251, 20, 0.692);
+  --black: rgb(52, 51, 51);
+  --hover: rgba(255, 255, 255, 0.243);
+  --blue: rgb(96, 181, 251);
+}
+
+
+* {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: .2s linear;
+  text-transform: capitalize;
+  text-decoration: none;
+
+}
+
+*::selection {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+  height: .5rem;
+  width: 1rem;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Body start /////////////////////////////////// */
+ 
+.pic-container {
+  height: 65rem;
+  width: auto;
+  background-image: url(pictures/home\ back.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-container>.text {
+  height: auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 7px rgba(0, 0, 0, 0.384), 5px 5px 7px rgba(0, 0, 0, 0.637);
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.438);
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.pic-container>.text>h1 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  color: white;
+}
+
+.pic-container>.text>h2 {
+  font-size: 1.6rem !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+}
+
+
+.btn2 {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.btn2>button {
+  height: 3rem;
+  width: 100px;
+  margin-top: .5rem;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 1rem;
+  box-shadow: inset 5px 5px 7px rgba(0, 0, 0, 0.199), 5px 5px 7px rgba(255, 255, 255, 0.637);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight:  bolder;
+  border-radius: 10px;
+}
+
+.btn2>button:hover {
+  color: var(--black);
+  /* font-weight: bold; */
+  background-color: var(--green);
+  /* box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.527), 5px 5px 7px rgba(0, 0, 0, 0.466); */
+
+}
+
+.btn2>button:active {
+  box-shadow: inset 5px 5px 7px rgba(0, 0, 0, 0.726), inset 5px 5px 7px rgba(0, 0, 0, 0.466);
+
+} 
+
+.last-text {
+  height: 15rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -8%;
+  display: flex;
+  overflow: hidden;
+  
+}
+
+.last-text>.h1 {
+  font-size: 1.5rem;
+  width: 50%;
+  background-color: var(--black);
+  color: white;
+  padding: 20px;
+  justify-content: center;
+
+}
+
+.last-text>.p {
+  font-size: large;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  background-color: var(--black);
+
+}
+
+
+/* apply and fee sttuctior btn end////////////////////////////////////////// */
+
+
+
+
+/* div program start //////////////////////////////////// */
+.program-text {
+
+  background-image: url("pictures/backgreen.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-shadow: inset 2px 2px 6px black, 2px 2px 6px black;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+
+
+
+
+.program {
+  width: 100%;
+  height: auto;
+  background-color: var(--black);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  justify-content: space-between;
+  /* display: grid; */
+  overflow-x: scroll;
+
+}
+
+.program>.courses {
+  height: 30rem;
+  width: 20rem;
+  background-color: var(--black);
+  padding: .5rem;
+  box-shadow: inset 1px 1px 5px white, 1px 1px 2px rgb(65, 65, 65);
+  border-radius: 10px;
+  text-align: center; 
+  margin: 2rem;
+}
+
+.program>.courses:hover {
+  box-shadow: inset 1px 1px 5px rgb(0, 255, 64), 1px 1px 2px rgb(0, 81, 255);
+  transform: scale(1.06);
+
+}
+
+#c1 {
+  height: 15rem;
+  width: 19rem;
+  border-radius: 10px;
+  align-items: center;
+  /* margin: 0.3rem; */
+}
+
+.program>.courses>h1 {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.program>.courses>p {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.program>.courses>.enroll-btn {
+  font-size: 1.5rem;
+  text-align: center;
+
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin-top: .5rem;
+  background-color: var(--green);
+  box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(65, 65, 65);
+}
+
+.program>.courses>.enroll-btn:hover {
+  box-shadow: 1px 1px 5px white, 1px 1px 2px rgb(65, 65, 65);
+  font-size: 1.6rem;
+}
+
+.program>.courses>.enroll-btn:active {
+  box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+.explore{
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore > .exp-btn{
+  background-color: var(--green);
+  width: 12rem;
+  padding: 5px;
+  margin-top: 1rem  ;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(65, 65, 65);
+
+}
+.explore > .exp-btn:hover{
+  box-shadow: 1px 1px 5px white, 1px 1px 2px rgb(65, 65, 65); 
+}
+.explore > .exp-btn:active{
+  box-shadow: inset 2px 2px 5px rgb(0, 0, 0), inset 2px 2px 5px rgb(65, 65, 65);
+
+}
+
+.explore > .exp-btn > i{
+  margin-top: .2rem;
+  margin-left: .2rem;
+  color: black;
+}
+
+/* div program start //////////////////////////////////// */
+
+/* scholarship ///////////////////////////////////// */
+.scholar{
+  width: 100%;
+  background-color: var(--black);  
+  display: inline-block;
+}
+.merit{
+  height: auto;
+  width: 95%;
+  margin: 2.5%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 1rem ;
+  columns: 2;
+}
+
+/* scholarship  end///////////////////////////////////// */
+
+
+/* parallax starts*/
+
+
+.parallax1{
+  background: url(pictures/success.jpg ) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.inner1{
+ height: 45rem;
+
+}
+
+/* parallax end*/
+
+.eff-h2{
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 20px 0 10px;
+}
+.eff-p{
+  font-size: 2rem;
+  margin: 2rem;
+  column-count: 2;
+  column-rule: 2px double var(--green);
+  background-color: var(--black);
+  color: white;
+  padding: 30px;
+  border-radius: 1rem;
+  overflow-y: scroll;
+}
+
+.effect-txt{
+  position: relative;
+}
+.side{
+  height: 25rem;
+  width: 30rem;
+  padding: 10px;
+  box-shadow:  -5px -5px 7px rgba(0, 0, 0, 0.623), -5px -5px 7px rgba(0, 0, 0, 0.438);
+  background-color: rgba(255, 255, 255, 0.253);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(3px);
+  position: absolute;
+  right: 1.5rem;
+  top: -23rem;
+}
+.side > h1{
+  /* text-align: center; */
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+}
+.side > p{
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+/* responsiveness ///////////////////////////////////// */
+
+
+@media screen and (max-width: 860px){
+  .pic-container{
+    height: 100vh;
+  }
+  .pic-container .text h1{
+    font-size: 2.5rem;
+  }
+  .pic-container .text h2{
+    font-size: 1.2rem;
+  }
+
+  .last-text   h1{
+    font-size: 4vh;
+  }
+  .last-text   p{
+    font-size: 3vh;
+  }
+  .inner1{
+    height: 80vh;
+  }
+  .eff-p{
+    max-height: 40vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 800px){
+  .pic-container{
+    height: 100vh;
+  }
+  .pic-container .text h1{
+    font-size: 2.5rem;
+  }
+  .last-text   h1{
+    font-size: 4vh;
+  }
+  .last-text   p{
+    font-size: 2.5vh;
+  }
+  .inner1{
+    height: 80vh;
+  }
+  .eff-p{
+    max-height: 40vh;
+    font-size: 3vh;
+  }
+
+}
+
+
+
+@media screen and (min-width: 640px) {
+  .pic-container .text{
+    height: 15rem;
+    padding: 0;
+  }
+  .pic-container .text h1{
+    font-size: 2rem;
+  }
+
+  .pic-container .text h2{
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 630px) {
+  .pic-container {
+    height: 65rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .program-text{
+    font-size: 1.5rem;
+  }
+
+  .side{
+    top: -24rem;
+  }
+  .last-text{
+    margin-top: -14%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pic-container>.text {
+    width: 80%;
+  }
+  .last-text>.p>p {
+    font-size:1.2rem ;
+  }
+
+
+  
+}
+@media screen and (max-width: 500px) {
+ .side{
+  height: 20rem;
+  width: 25rem;
+  top: -19rem;
+ }
+ .side p{
+  font-size: 2rem;
+ }
+ .side p{
+  font-size: 1rem;
+ }
+
+}
+
+
+

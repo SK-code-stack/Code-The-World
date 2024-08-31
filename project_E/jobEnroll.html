@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Apply > CW</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="enroll.css">
+		<script src="js/home.js"></script>
+	</head>
+
+	<body>
+	
+		<div class="top">
+			<i id="cross" class="fa fa-close" onclick="home()"></i>
+		</div>
+		<div class="wrapper" style="background-image: url(pictures/home\ back.PNG);">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/enroll.jpg" class="img" alt="">
+				</div>
+				<form action="candidate.php" method="POST">
+					<h3>Job Registration Form</h3>
+					<div class="form-group">
+						<input type="text" placeholder="First Name"  name="firstname" class="form-control" required>
+						<input type="text" placeholder="Last Name"  name="lastname" class="form-control" required>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Recent Degree"  name="degree" class="form-control" required>
+					</div>
+					
+					<div class="form-wrapper">
+						<select name="experiance" id="" class="form-control" required>
+							<option value="" disabled selected>Experience</option>
+							<option value="Fresh">Fresh</option>
+							<option value="Experienced">Experienced</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="last Job / none"  name="lastJob" class="form-control" required>
+					</div>
+					
+					<div class="form-wrapper">
+						<input type="text" placeholder="Email Address"  name="email" class="form-control" required>
+						<i class="zmdi zmdi-email"></i>
+					</div>
+				
+					<div class="form-wrapper">
+						<select name="gander" id="" class="form-control" required>
+							<option value="" disabled selected>Gender</option>
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+							<option value="O">Other</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="number"  id="number" placeholder="phone no."  name="contact" class="form-control" required>
+					</div>
+					
+					<button onclick="validatePassword()">Apply
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<script>
+			// Function to validate password and confirm password fields
+function validatePassword() {
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    // Check if password and confirm password fields are not empty
+    if (password === '' || confirmPassword === '') {
+        alert('Please fill in both password and confirm password fields.');
+        return false;
+    }
+
+    // Check if password and confirm password match
+    if (password !== confirmPassword) {
+        alert('Password and confirm password do not match.');
+        return false;
+    }
+
+    return true;
+}
+
+		</script>
+		
+<!-- local storage for course name -->
+
+
+	</body>
+
+</html>
